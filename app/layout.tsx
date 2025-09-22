@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SNR AI Automation - Executive Dashboard",
-  description: "Executive command center for SNR AI Automation ecosystem",
+  title: "SEION Digital Business Analyzer",
+  description: "Live, production-ready Business Analyzer AI Agent system for SEION Digital.",
 };
 
 export default function RootLayout({
@@ -36,6 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

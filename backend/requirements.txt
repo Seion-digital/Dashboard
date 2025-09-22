@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+google-generativeai
+googlemaps
+playwright
+supabase
+pydantic
+python-dotenv
